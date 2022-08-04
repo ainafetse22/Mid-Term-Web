@@ -1,27 +1,28 @@
 body{
     font-family: 'Roboto';
     font-style: normal;
-    padding: 0;
+    padding: 20px;
     margin:0;
-    width: 100vw;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     display: flex;
     flex-direction: column;
 }
 .nav-container{
-    margin: 0vh 10vw 0 10vw;
     display: flex;
+    position: fixed;
+    width: 100%;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 10vh;
+    height: 50px;
+    background-color: white;
 
 }
 .nav-menu{
     list-style-type: none;
     
             /* Menu */
-    width: 30vw;
+    width: 30%;
     height: 22px;
     /* Web/Headline/Medium */
     font-family: 'Roboto';
@@ -52,6 +53,13 @@ body{
     color: #072AC8;
     /* -webkit-text-stroke: 0.5px black; */
    }
+
+.hero-container{
+    width:100%;
+    margin-top:50px;
+    display: flex;
+    flex-direction: column;
+}
 .hero-container h1{
     font-weight: 600;
     font-size: 2.5em;
@@ -60,11 +68,7 @@ body{
     color: #292E47;  
 }
 
-.hero-container{
-    width:100vw;
-    display: flex;
-    flex-direction: column;
-}
+
 
 .hero-content-text{
     display:flex;
@@ -107,10 +111,7 @@ body{
 }
 .image-div-container{
     display: flex;
-    
     justify-content: center;
-    margin-left: 10vw;
-    margin-right: 10vw;
     position: relative;
 }
 .img-hero-container{
@@ -140,13 +141,11 @@ body{
 .client-section{
     display:flex;
     flex-wrap: wrap;
-    margin-left: 10vw;
-    margin-right: 10vw;
 }
 
 .client-logos-container{
-    height: 15vh;
-    width: 80vw;
+    height: 140px;
+    width: 100%;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -163,9 +162,7 @@ body{
 }
 
 .projects-container{
-    margin-left: 10vw;
-    margin-right:10vw;
-    margin-bottom: 10vh;
+    margin-bottom: 40px;
     
 }
 .project-card-container{
@@ -184,13 +181,13 @@ body{
     transition: 0.4s ease-out;
     display:flex;
     flex-direction: column;
-    width: 80vw;
+    width: 60%;
     background: #FFFFFF;
     box-shadow: 0px 38.7755px 77.551px rgba(0, 0, 0, 0.1);
 }
 .project-card img{
     width: 100%;
-    height: 20vh
+    height: 60%;
 }
 .project-card:hover {
     transform: translateY(-20px);
@@ -199,6 +196,7 @@ body{
 
 .projects-container h2{
     padding-right: 80%;
+    padding-left: 10%;
 }
 
 
@@ -217,20 +215,31 @@ body{
     line-height: 150%;
     color: #072AC8;
 }
-.image-project{
-    width: 100%;
-    /* width: 340px;
-    height: 444px; */
-}
-.testimonial-container{
+
+.testimonial-section{
     background-image: url("/images/testimonial-section/orbit.png");
     background-color: #292E47;
-    height: 50vh;
-    width: 100vw;
+    height: 60vh;
+    width: 100%;
     background-size:auto;
+  
+}
+
+.avatar-container{
+    display: none;
+}
+
+.testimonial-section{
     display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.testimonial-container{
+    display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: space-between;
+    
     padding-top: 10%;
     padding-bottom: 10%;
 }
@@ -295,9 +304,6 @@ body{
     text-align: start;
 }
 
-.avatar-review{
-    display: none;
- }
 
 /* #service-two{
     display:none
@@ -306,13 +312,16 @@ body{
 #service-three{
     display: none;
 } */
-
+/*padding en el body
+anchos por porcentajes
+alturas por pixeles max
+flex:0.25
+flex:0.5
+flex:0.25*/
 
 .services-container{
-    margin-left: 10vw;
-    margin-right:10vw;
-    margin-bottom: 10vh;
-    margin-top: 10vh;
+    margin-bottom: 50px;
+    margin-top: 50px;
     
 }
 .service-card-container{
@@ -325,7 +334,7 @@ body{
     transition: 0.4s ease-out;
     display:flex;
     flex-direction: column;
-    width: 50vw;
+    width: 70%;
     background: #FFFFFF;
     box-shadow: 0px 38.7755px 77.551px rgba(0, 0, 0, 0.1);
 }
@@ -371,15 +380,50 @@ body{
     /* width: 340px;
     height: 444px; */
 }
+.contact-container{
+    width: 100%;
+    height: 50vh;
+    background-color: #FFC600;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
 
+.contact-form-email{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
-/* For medium size mobile */
-/* @media only screen and (min-width: 768px) {
-} */
-/* For desktop */
-/* @media only screen and (min-width: 768px) {
-} */
+#email{
+    width: 150px;
+    height: 50px;
+    background-image: url("../images/newsletter/icon/mail.svg");
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding-left: 50px;
+}
+.contact-container h2{
+    font-weight: 700;
+    font-size: 2.5em;
+    text-align: center;
+    /* line-height: 2.9em;
+     */
+}
 
+.contact-container p{
+    font-size: 1.25em;
+    line-height: 150%;
+}
+.contact-form-email button{
+    background: #072AC8;
+    color: white;
+    height: 50px;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 130%;
+}
+/***********************************************************************/
 
 /* For medium size mobile */
 @media only screen and (min-width: 640px) {
@@ -390,7 +434,7 @@ body{
         text-decoration: none;
     }
     .hero-container{
-        width:80vw;
+        width:100%;
         height: 60vh;
         margin-left: 10vw;
         display: flex;
@@ -446,29 +490,30 @@ body{
         width:90%;
         max-width: 220px;
     }
+    .testimonial-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: space-around;
+    }
     .testimonial-container{
-        position: absolute;
+        flex:0.65;
     }
+    .avatar-container{
+        flex:0.25;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+ 
+
     .avatar-review{
-        display: block;
-        position: absolute;
-        width: 15%;
-    }
-    #avatar1{
-        top:0%;
+        width: 100%;
+
     }
 
-    #avatar2{
-        top:0%;
-        right: 0%;
-    }
-    #avatar3{
-        bottom:0%;
-    }
-    #avatar4{
-        bottom:0%;
-        right: 0%;
-    }
     #project2{
         display: flex;
     }
@@ -480,6 +525,7 @@ body{
     .service-card-container{
         flex-wrap: no-wrap;
     }
+
 }
 @media only screen and (min-width: 1007px) {
 

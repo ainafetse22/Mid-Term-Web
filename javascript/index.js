@@ -1,4 +1,7 @@
 
 document.querySelector(".projects-container").addEventListener("click", function() {
-    window.location.href += '/html/project.html';
+  console.log("click");
+    window.location.href =  window.location.origin+'/html/project.html';
       });
+
+

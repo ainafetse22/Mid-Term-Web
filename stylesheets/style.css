@@ -14,7 +14,7 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    padding-top: 10px;
+    padding: 10px 5px 0px 5px;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
@@ -57,7 +57,7 @@ body{
 
 .nav-link a:hover{
     color: #072AC8;
-    /* -webkit-text-stroke: 0.5px black; */
+    -webkit-text-stroke: 0.5px black;
    }
 /******************hero-section**********/
 .hero-container{
@@ -351,9 +351,15 @@ body{
     padding-bottom: 20px;
     box-shadow: 0px 38.7755px 77.551px rgba(0, 0, 0, 0.1);
 }
+.service-card:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+}
 .service-card img{
     width: 40%;
 }
+
+
 
 .service-img-border{
     
@@ -516,7 +522,7 @@ body{
 
 .project-description{
     width:100%;
-    padding: 0 10px; 
+    padding: 20px 10px;
     margin-top:50px;
     display: flex;
     flex-direction: column;
@@ -543,6 +549,7 @@ body{
     font-size: 0.5em;
     text-align: left;
     color:#292E47;
+    padding-top: 20px;
     
 } 
 .project-description p{
@@ -563,7 +570,63 @@ body{
 }
 .project-description img{
     height: 35vh;
-    padding: 30px 0px;
+    /* padding: 30px 0px; */
+}
+
+/****************Contact-Us***********************/
+.section-contact-us{
+    
+    margin-top: 55px;
+    padding: 0 20px 0 20px;
+}
+
+.contact-form h1{
+    font-weight: 600;
+    font-size: 1.5em;
+    text-align:left;
+    color: #292E47;  
+    line-height: 0;
+   
+    display: block;
+    width: 100%;
+}
+.contactus-form{
+    display: flex;
+    height:90%;
+    flex-direction: column;
+}
+.contact-text{
+    font-weight: 400;
+    font-size: 0.6em;
+    line-height: 150%;
+    color: #6B708D;
+}
+.contact-text:after {
+    content:" *";
+    color:  #6B708D;
+  }
+.contact-input{
+    background-color: rgba(107, 112, 141, 0.1) ;
+    font-size: 0.5em;
+    height: 30px;
+    margin-bottom: 30px;
+}
+.contact-p{
+    background-color: rgba(107, 112, 141, 0.1) ;
+    font-size: 0.5em;
+    height: 134px;
+    margin-bottom: 30px;
+    text-align: start;
+
+}
+.contactus-form button{
+    background: #072AC8;
+    color: white;
+    height: 50px;
+    font-weight: 400;
+    font-size: 0.9;
+    line-height: 130%;
+    margin-bottom: 20px;
 }
 /***********************************************************************/
 /***********************************************************************/
@@ -770,6 +833,7 @@ body{
     .description-title{
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-end;
     }
     .project-description img {
         height: 40vh;

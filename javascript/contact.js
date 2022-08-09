@@ -1,8 +1,20 @@
+//////nav-bar logo click////
+document.querySelector(".nav-logo img").addEventListener("click", e=>{
+  window.location.href =  window.location.origin+'/index.html';
+})
 
+//////form submit click////
 document.querySelector(".contactus-form button").addEventListener("click", e =>{
-        console.log("clicke");
+        console.log("dentrode");
+        const inpObj =document.querySelector(".contactus-form");
+        inpObj.checkValidity();
+        if (inpObj.checkValidity()) { //is the form filled correctly?
         document.querySelector(".ok-message").classList.add("shown-message");
-});
+        document.querySelector(".ok-message").classList.remove("hidden-message");
+        setTimeout(function() {
+          //your code here
+         }, 5000);
+}});
 
 document.querySelector(".overlay").addEventListener("click",e=>{
   console.log("click overlay");

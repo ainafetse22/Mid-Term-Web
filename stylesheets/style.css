@@ -966,6 +966,56 @@ body{
      }
 }
 @media only screen and (min-width: 1007px) {
+    .nav-container {
+        height: 80px;
+    }
+    .nav-logo img {
+        height: 50px;
+    }
+
+    .nav-menu a {
+        font-weight: 600;
+        font-size: 34px;
+    }
+    .contact-button {
+        width: 8rem;
+        height: 50px;
+        font-size: 1rem;
+    }
+    .hero-container h1 {
+        font-weight: 800;
+        font-size: 3em;
+        padding-right: 0;
+    }
+    .img-hero-container {
+        max-width: 436px;
+    }
+
+    #img-hero-home {
+    
+        width: 100%;
+        max-width: 460px;
+    }   
+    
+    #card1 {
+    top: 3%;
+    left: -27%;
+    max-width: 322px;
+    }
+    #card2 {
+       bottom: -108px;
+        right: -61px;
+        max-width: 309px;
+    }
+
+    .hero-content-text p {
+        font-weight: 500;
+        font-size: 1.1em;
+    }
+}
+    
+
+
 
 }
 

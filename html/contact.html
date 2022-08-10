@@ -21,15 +21,17 @@
       </div>
     <section class="section-contact-us">
       <h1>Contact Us</h1>
-      <form class="contactus-form" autocomplete="on">
+      <form class="contactus-form" >
         <label class="contact-text">Full Name</label>
         <input class="contact-input" type="cc-name" name="name" placeholder="Enter you full name" required>
         
         <label class="contact-text">Email</label>
         <input class="contact-input" type="email" name="email"placeholder="Enter you email address" required>
         
-        <label class="contact-text">Phone</label>
-        <input class="contact-input" type="tel" name="tel" placeholder="Enter your phone number"required>
+        <label forclass="contact-text">Phone</label>
+        <input type="tel" id="phone" class="contact-input"  name="phone"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Enter your phone number"required>
+
+  
         
         <label class="contact-text">Message</label>
         <textarea class="contact-p" placeholder="Write your message here ...." required></textarea>
@@ -64,10 +66,10 @@
       <div class="overlay"></div>
       <div class="submit-message">
         <div class="oksubmit">
-          <!-- <img src="/images/extras/pineapple.png"> -->
+          <img src="/images/extras/pineapple.png">
           <div class="submit-text">
             <h3>We will come back to you very soon!</h3>
-            <h4>Meet our @FruitPet friend on Instagram!</h4>
+            <h4>Meanwhile go and meet our @FruitPet friend on Instagram!</h4>
           </div>    
         </div>
         <button>OK</button>   

@@ -31,6 +31,8 @@ document.querySelector(".ok-message button").addEventListener("click",e=>{
 
 
 
+
+
 //  let progress = $(".progressbar .progress");
 //        function counterInit(fValue, lValue) {
 //          let counter_value = parseInt($(".counter").text());

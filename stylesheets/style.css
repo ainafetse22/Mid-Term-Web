@@ -3,7 +3,7 @@ body{
     font-style: normal;
     padding: 20px;
     margin:0;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
 }
@@ -37,9 +37,9 @@ body{
     font-size: 1.1em;
     line-height: 130%;
     color: #072AC8;
-    display: flex;
     flex-direction: row;
     justify-content: space-around; 
+    display: none;
 
 }
 .nav-menu li{
@@ -151,7 +151,7 @@ body{
 }
 
 .client-logos-container{
-    height: 10vh;
+    height: 50px;
     width: 100%;
     display:flex;
     justify-content: space-between;
@@ -180,6 +180,7 @@ body{
     font-size: 1rem;
     justify-content: flex-start;
     overflow: auto;
+    padding-bottom: 10px;
 }
 
 #project2{
@@ -228,7 +229,7 @@ body{
 .project-card a{
     padding-left: 5%;
     font-weight: 400;
-    font-size: 17px;
+    font-size: 0.6em;
     line-height: 150%;
     color: #072AC8;
     text-decoration: none;
@@ -772,6 +773,9 @@ body{
     .nav-menu a{
         text-decoration: none;
     }
+    .nav-menu{
+        display: flex;
+    }
     .hero-container{
         width:100%;
         height: 600px;
@@ -787,7 +791,7 @@ body{
         height: auto;
     }
     .hero-content-text{
-        flex: 1;
+        flex: 0.6;
         margin: 0;
     }
     .hero-container h1{
@@ -969,7 +973,7 @@ body{
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        height: 30vh;
+        height: 100px;
 
     }
     .links-container{
@@ -1017,7 +1021,7 @@ body{
     }
     .nav-container {
         height: 80px;
-        padding: 20px 10px 0px 10px;
+        padding: 40px 10px 0px 10px;
     }
     .nav-logo img {
         height: 50px;
@@ -1033,28 +1037,32 @@ body{
         height: 70px;
         font-size: 1rem;
     }
+    .hero-container{
+        height: 800px;
+        margin-top: 80px;
+    }
     .hero-container h1 {
         font-weight: 800;
         font-size: 3em;
-        padding-right: 0;
+        padding-right: 25px;
     }
     .img-hero-container {
-        max-width: 436px;
+        max-width: 432px;
+        margin-left: 25px;
     }
 
     #img-hero-home {
-    
-        width: 100%;
+        width: 85%;
         max-width: 460px;
     }   
     
     #card1 {
-    top: 3%;
-    left: -27%;
-    max-width: 322px;
+        top: 9%;
+        left: -27%;
+        max-width: 322px;
     }
     #card2 {
-       bottom: -108px;
+        bottom: -42px;
         right: -61px;
         max-width: 309px;
     }
@@ -1066,6 +1074,103 @@ body{
     .see-work-link{
         height:70px;
     }
-   
+
+    .testimonial-section {
+        height: 700px
+    }
+    .testimonial-container h2 {
+        font-weight: 800;
+        font-size: 1.75em;
+    }
+    .testimonial-container h3 {
+        font-size: 1.25em;
+        margin-top: 47px;
+    }
+    .client-info-container img {
+        height: 85px;
+    }
+    .client-text {
+        font-size: 1.75em;
+    }
+    .client-logos-container{
+        height: 140px;
+        margin-top: 20px;
+    }
+    .projects-container {
+        height: 800px;
+    }
+    .project-card-container {
+     padding-bottom: 50px;
+    }
+    
+
+    .projects-container h2 {
+        font-size: 2em;
+    }
+    .project-card {
+       min-width: 350px;
+       margin-right: 25px;
+    }
+    .project-card p {
+        font-size: 1em;
+        padding: 15px;
+    }
+    .project-card h3 {
+        font-size: 1.5em;
+    }
+    .services-container h2 {
+        font-size: 2em;
+    }
+
+    .service-card{
+        height: 500px;
+    }
+    .service-card h3 {
+        font-stretch: expanded;
+        font-size: 1em;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .service-card p {
+        
+    font-size:0.8em;
+    }
+    .service-card a {
+        font-size: 0.7em;
+    }
+    .service-card img {
+         width: 50%;
+     }    
+     .service-card p {
+        height: 100px;
+        margin-top: 43px;
+
+     }
+     .contact-section {
+        height: 600px;
+        margin-bottom: 20px;
+    }
+    .footer-section {
+       
+        justify-content: space-around;
+        
+    }
+    .contact-container h2 {
+        font-size: 2em;
+        
+    }
+    .contact-container p {
+        font-size: 1em;
+        
+    }
+    .contact-form-email button {    
+        font-size: 0.8em;
+    }
+    #email {
+      font-size: 0.8em;
+    }
+
 }
+
 

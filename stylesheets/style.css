@@ -127,6 +127,7 @@ body{
     align-items: flex-start;
     height: 100%;
     width:100%;
+    margin-top: 70px;
     /* max-width: 400px; */
 }
 
@@ -168,7 +169,7 @@ body{
 }
 /***********************project-section****************/
 .projects-container{
-    margin-bottom: 40px;
+    margin-bottom: 57px;
     font-size: 1rem;
     overflow: hidden;
     
@@ -231,6 +232,7 @@ body{
     line-height: 150%;
     color: #072AC8;
     text-decoration: none;
+    margin-bottom: 20px;
 }
 
 /* ::-webkit-scrollbar {
@@ -262,8 +264,7 @@ body{
     display: flex;
     width: 100%;
     flex-direction: column;
-    justify-content: space-between;
-    
+    justify-content: space-evenly;
     padding-top: 10%;
     padding-bottom: 10%;
 }
@@ -360,6 +361,7 @@ body{
     height: 300px;
     background: #FFFFFF;
     padding-bottom: 20px;
+    margin-bottom: 40px;
     box-shadow: 0px 38.7755px 77.551px rgba(0, 0, 0, 0.1);
 }
 .service-card:hover {
@@ -391,7 +393,7 @@ body{
 
 
 .service-card p{
-    padding-left: 5%;
+    padding:15px;
     font-size: 0.5em;
 
 }
@@ -402,7 +404,7 @@ body{
 }
 
 .service-card a{
-    
+    margin-top: 40px;
     padding-left: 5%;
     font-weight: 400;
     padding-left: 5%;
@@ -425,13 +427,14 @@ body{
 }
 .contact-container{
    
-    height: 100%;
+    height: 324px;
     font-size: 1rem;
     background-color: #FFC600;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .contact-form-email{
@@ -445,7 +448,7 @@ body{
 }
 
 #email{
-    width: 200px;
+    width: 160px;
     height: 50px;
     background-image: url("../images/newsletter/icon/mail.svg");
     background-position: 10px 10px;
@@ -455,7 +458,7 @@ body{
 }
 .contact-container h2{
     font-weight: 600;
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-align: center;
     line-height: 1em;
     padding: 10px;
@@ -803,7 +806,7 @@ body{
     }
 
     .img-hero-container{
-        
+        margin-top: 0px;
         align-items: center;
         height: 100%;
         width: 100%;
@@ -842,20 +845,48 @@ body{
     }
     .testimonial-container{
         flex:0.65;
+        justify-content: space-between;
     }
+    .testimonial-container h2 {
+        font-weight: 700;
+        font-size: 1em;
+       
+     }
+
+
+
+
+    .testimonial-container h3 {
+        font-size: 0.5em;
+        margin-top: 47px;
+    }
+    
     .avatar-container{
         flex:0.25;
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        
+        align-items: center;
+    }
+    .client-info-container img {
+        display: block;
+        height: 50px;
+    }
+    .client-info-container{
+        flex-direction: row;
+        margin-top: 33px;
     }
  
 
     .avatar-review{
-        width: 85%;
+        width: 67%;
 
+    }
+
+    .contact-container {
+        height: 400px;
+        margin-bottom: 10px;
     }
 /*****************Project-section**********/
     .project-section{
@@ -874,14 +905,21 @@ body{
     /**************service-section****************/
     .services-container{
         padding: 30px 50px;
-
+    }
+    .service-card {
+        margin-right: 20px;
     }
     .service-card p{
         height: 45px;
         font-weight: 400;
         /* font-size: 20px; */
         line-height: 150%;
-        padding-bottom: 15px;
+    
+
+        
+    }
+    .service-card a {
+        margin-top: 20px;
     }
     .service-card-container{
         flex-wrap: nowrap;
@@ -906,6 +944,9 @@ body{
     #email{
         flex: 0.70;
         min-width: 200px;
+        margin-left: 20px;
+        margin-right: 20px;
+        
     }
 
     .contact-container p {
@@ -913,10 +954,11 @@ body{
     }
     .contact-form-email button {
         height: 56px;
-        width: 200px;
+        width: 170px;
         font-weight: 300;
         font-size: 0.5em;
         padding-left: 10px;
+        
     }
     /************footer-section************************/
     
@@ -965,21 +1007,30 @@ body{
         height: 40vh;
      }
 }
+/********************************************************
+*********************************************************
+***************BIG SCREENS*****************************/
+
 @media only screen and (min-width: 1007px) {
+    body{
+        padding: 40px;
+    }
     .nav-container {
         height: 80px;
+        padding: 20px 10px 0px 10px;
     }
     .nav-logo img {
         height: 50px;
     }
 
     .nav-menu a {
-        font-weight: 600;
+        font-weight: 500;
         font-size: 34px;
+        margin: 0 20px 0px 20px;
     }
     .contact-button {
         width: 8rem;
-        height: 50px;
+        height: 70px;
         font-size: 1rem;
     }
     .hero-container h1 {
@@ -1012,10 +1063,9 @@ body{
         font-weight: 500;
         font-size: 1.1em;
     }
-}
-    
-
-
-
+    .see-work-link{
+        height:70px;
+    }
+   
 }
 

@@ -538,8 +538,10 @@ body{
 }
 
 .project-description{
-    width:100%;
+    width:70%;
     margin-top: 100px;
+    padding-left: 50px;
+    padding-right: 0px;
     display: flex;
     flex-direction: column;
     

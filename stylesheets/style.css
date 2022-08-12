@@ -447,7 +447,7 @@ body{
     align-items: center; */
     justify-content: space-between;
     flex-direction: column;
-    height: 125px;
+    height: 70px;
 }
 
 #email{
@@ -537,11 +537,14 @@ body{
     color: #6B708D;
 }
 
+.subscribed-msg{
+    display: block;
+    height: 40px;
+}
 .project-description{
     width:70%;
     margin-top: 100px;
-    padding-left: 15%;
-    padding-right: 0px;
+    margin-left: 15%;
     display: flex;
     flex-direction: column;
     
